@@ -12,6 +12,7 @@ function Invoke-AmigaExecutable
 
     $filename = Split-Path $exe -leaf
     Copy-Item $exe ../../tools/hd0/$filename
+    New-Item ../../tools/hd0/S -ItemType Directory -Force
     $filename | Out-File ../../tools/hd0/S/startup-sequence
     fs-uae ../../tools/fs-uae/$config.fs-uae
 }

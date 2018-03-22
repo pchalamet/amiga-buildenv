@@ -53,4 +53,5 @@ $vbcc = Join-Path $tools "compiler"
 Write-Host "Append following lines to your profile.ps1:"
 Write-Host "`$env:VBCC = `"$vbcc`""
 Write-Host "`$env:PATH += `":`$env:VBCC/bin`""
+Write-Host "Import-Module `$tools/scripts/demo.psm1"
 
