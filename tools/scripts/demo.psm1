@@ -15,3 +15,6 @@ function Invoke-AmigaExecutable
     $filename | Out-File ../../tools/hd0/S/startup-sequence
     fs-uae ../../tools/fs-uae/$config.fs-uae
 }
+
+Export-ModuleMember -Function Build-Devpac
+Export-ModuleMember -Function Invoke-AmigaExecutable
