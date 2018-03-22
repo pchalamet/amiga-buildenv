@@ -1,0 +1,23 @@
+# see https://fs-uae.net/docs/options
+[config]
+amiga_model = A500
+#chip_memory = 1024
+#fast_memory = 1024
+accuracy = 1
+uae_cpu_speed = real
+uae_immediate_blits = false
+uae_waiting_blits = always
+
+hard_drive_0 = ../../tools/hd0 
+floppy_drive_volume = 0
+
+keep_aspect = 1 
+fullscreen = 0
+video_sync = full
+
+automatic_input_grab = 0
+jit_compiler=0
+console_debugger = 1
+uae_gfxcard_hardware_vblank = 1
+viewport = * * * * => 0 0 752 576
+title = demo
