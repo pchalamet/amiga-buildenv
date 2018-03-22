@@ -3,6 +3,8 @@ This is my Amiga development environment on MacOS.
 It uses brew, fs-uae, vasm and powershell. VS Code is recommended (with m68k extension) to help with development.
 
 # Configure development environment
+Configuration installs brew. That's the only side effect on your system.
+
 First initial your computer using tools/scripts/install.sh
 This will setup brew, fs-uae, lha and powershell.
 
@@ -12,10 +14,9 @@ Do not forget to modify your profile.ps1 accordingly (see instructions after bui
 Also, it's strongly advised to import demo.psm1 module in your profile.ps1.
 Import-Module /tools/scripts/demo.psm1
 
-# How to compile
-See example in src/bigballs/build.ps1
-Note that this build script use powershell and a module in tools/scripts/demo.psm1 (which you should have in your profile).
+# Check everything is working
+Invoke src/bigballs/build.ps1, you should see a small demo running in fs-uae.
+This script shows commands (from module demo.psm1) and can serve as a basic to build your stuff.
 
 # You are done !
 Happy Amiga hacking !
-
